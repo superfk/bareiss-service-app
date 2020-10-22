@@ -10,15 +10,15 @@ import MenuIcon from '@material-ui/icons/Menu';
 import classes from './Header.module.css';
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
-  },
+    root: {
+        flexGrow: 1,
+    },
+    menuButton: {
+        marginRight: theme.spacing(2),
+    },
+    title: {
+        flexGrow: 1,
+    },
 }));
 
 const Header = () => {
@@ -27,7 +27,7 @@ const Header = () => {
 
     return (
         <div className={classes.HeaderBar}>
-            <AppBar position="static">
+            <AppBar position="static" color="transparent">
                 <Toolbar>
                     <IconButton edge="start" className={mtClasses.menuButton} color="inherit" aria-label="menu">
                         <MenuIcon />
